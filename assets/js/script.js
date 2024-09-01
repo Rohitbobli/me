@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const element = document.querySelector('.rolling-name');
     element.textContent = "";
     const initialText = "Rohit Bobli";
-    const words = ["Student", "Code", "Math"];
+    const words = ["Rohit bobli","Student", "Coder", "Math", "Baby"];
     let text = initialText;
     let index = 0;
     let wordIndex = 0;
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (index < text.length) {
             element.textContent += text.charAt(index);
             index++;
-            setTimeout(type, 500); // Adjust typing speed here
+            setTimeout(type, 300); // Adjust typing speed here
         } else {
             setTimeout(erase, 2000);
         }
@@ -23,12 +23,8 @@ document.addEventListener("DOMContentLoaded", function() {
             index--;
             setTimeout(erase, 100); // Adjust erasing speed here
         } else {
-            if (text === initialText) {
-                text = words[wordIndex];
-                wordIndex = (wordIndex + 1) % words.length;
-            } else {
-                text = initialText;
-            }
+            wordIndex = (wordIndex + 1) % words.length;
+            text = words[wordIndex];
             setTimeout(type, 500);
         }
     }

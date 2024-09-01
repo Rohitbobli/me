@@ -4,6 +4,7 @@ body {
     margin: 0;
     background-color: #1f1628;
     user-select: none;
+    font-family: "Pixelify Sans", sans-serif;
 }
 
 .container {

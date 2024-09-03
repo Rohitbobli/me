@@ -46,3 +46,47 @@ a:hover {
     color: #E2E2B6;
 }
 
+.nav-bar {
+    background-color: #2A0944;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        font-size: 2rem;
+        padding: 20px;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .nav-bar {
+        padding: 5px;
+    }
+
+    li {
+        padding: 5px;
+    }
+}

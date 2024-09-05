@@ -35,4 +35,4 @@ function draw() {
   }
 }
 
-console.log("Hi its workin")
+console.log("Hi its working")

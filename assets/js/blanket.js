@@ -33,5 +33,6 @@ function draw() {
       grid[i][j].display();
     }
   }
-  
 }
+
+console.log("Hi its workin")
